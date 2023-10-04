@@ -62,11 +62,11 @@
         <h3 class="text-center" id="inscribite" >INSCRIBITE</h3>
         <div id="container-contact">
             <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate>
+            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" method="POST">
                 <div class="d-grid gap-3">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Nombre y apellido</label>
-                        <input type="text" class="form-control" id="InputName" placeholder="Escriba su nombre..."
+                        <input type="text" name="nombre" class="form-control" id="InputName" placeholder="Escriba su nombre..."
                             required />
                         <div class="invalid-feedback">
                             Debe rellenar este campo para continuar.
@@ -74,8 +74,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="correo@ejemplo.com" required />
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="correo@ejemplo.com" required />
+
                         <div class="invalid-feedback">
                             Debe rellenar este campo para continuar.
                         </div>
@@ -169,11 +169,11 @@
         <h3 class="text-center" id="inscribite">INSCRIBITE</h3>
         <div id="container-contact">
             <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate>
+            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" method="POST">
                 <div class="d-grid gap-3">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Nombre y apellido</label>
-                        <input type="text" class="form-control" id="InputName" placeholder="Escriba su nombre..."
+                        <input type="text" name="nombre" class="form-control" id="InputName" placeholder="Escriba su nombre..."
                             required />
                         <div class="invalid-feedback">
                             Debe rellenar este campo para continuar.
@@ -181,8 +181,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="correo@ejemplo.com" required />
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="correo@ejemplo.com" required />
+
                         <div class="invalid-feedback">
                             Debe rellenar este campo para continuar.
                         </div>

@@ -4,8 +4,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 const transporter = require("./helpers/mailer")
 
-app.use(express.static('public'));
-
 app.get("/login/:email/code", async function (req, res){
     const {email} = req.params
     const result = await transporter.sendMail({
@@ -20,7 +18,7 @@ res.status(200).json({ok: true, message: "Codigo enviado con exito!"})
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'))
+    res.sendFile(path.join(__dirname, '/index.html'))
 });
 app.get('/anda', (req, res) => {
     res.send("anda la pagina")

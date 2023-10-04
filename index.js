@@ -17,14 +17,12 @@ app.get("/enviar-correo", async function (req, res) {
         <p>Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.</p>
         <p>Accede ahora para no perderte nada y estar preparadx una vez empecemos.</p>
         <a href="URL_DEL_GRUPO_DE_WHATSAPP">
-          <button style="background-color: #25d366; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Botón de Whatsapp</button>
-        </a>
+          <button style="background-color: #25d366; color: white; padding: 10px 20px; border: none; border-radius: 5px; text-align: center;">Link de Whatsapp</button></a>
         <p>Fecha: Del 17 de octubre al 21 de octubre.</p>
         <p>Importante que te reserves el día 21 de octubre a las 19:00.</p>
         <p>Voy a hacer una Masterclass en directo para llevar tu mentalidad al siguiente nivel.</p>
       `,
     });
-  });
   
 console.log({result});
 res.sendFile(path.join(__dirname,'public', '/acces.html'))

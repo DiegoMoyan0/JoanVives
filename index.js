@@ -2,26 +2,25 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
-const transporter = require("./helpers/mailer")
+const transporter = require("./mailer")
 
-app.get("/login/:email/code", async function (req, res){
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get("/enviar-correo", async function (req, res){
     const {email} = req.params
     const result = await transporter.sendMail({
     from: 'diegomoyano02@gmail.com', 
-    to: email, 
+    to: 'diiegomoyano02@gmail.com', 
     subject: "Hello ✔", 
     body: "Hello world?", 
 
 });
 console.log({result});
-res.status(200).json({ok: true, message: "Codigo enviado con exito!"})
+res.sendFile(path.join(__dirname,'public', '/acces.html'))
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'))
-});
-app.get('/anda', (req, res) => {
-    res.send("anda la pagina")
+    res.sendFile(path.join(__dirname, 'public', '/index.html'));
 });
 
 app.listen(port, () => {

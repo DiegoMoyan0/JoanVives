@@ -7,12 +7,11 @@ const transporter = require("./mailer")
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/enviar-correo", async function (req, res){
-    const {email} = req.params
     const result = await transporter.sendMail({
     from: 'diegomoyano02@gmail.com', 
     to: 'diiegomoyano02@gmail.com', 
-    subject: "Hello ✔", 
-    body: "Hello world?", 
+    subject: "Tu entrada al Reto deportivo", 
+    text: "Hola! Bienvenidx al Reto! Recibes este correo porque ya casi formas parte del grupo    Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.    Accede ahora para no perderte nada y estar preparadx una vez empecemos    Botón de Whatsapp con el enlace al grupoFecha:Del 17 de octubre all 21 de octubre.Importante que te reserves el día 21 de octubre a las 19:00. Voy a hacer una Masterclass en directo para llevar tu mentalidad al siguiente nivel.", 
 
 });
 console.log({result});

@@ -36,7 +36,7 @@
     const number2 = document.getElementById("number-2");
 
     if (isElementInViewport(number1) && !number1.dataset.animated) {
-      animateNumber(number1, 500);
+      animateNumber(number1, 5000);
       number1.dataset.animated = true; // Marcar como animado
     }
 

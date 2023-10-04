@@ -134,7 +134,7 @@ body {
 }
 
 #caja-ABOUT {
-    background-image: url('//images/_MG_6188.jpg');
+    background: rgba(0, 0, 0, 0.7) url(/images/_MG_6188.jpg) center center no-repeat;
     border-radius: 10px;
     background-size: contain;
     /* Cambiamos a 'contain' para ajustar la imagen al tamaño del contenedor */

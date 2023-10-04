@@ -22,6 +22,9 @@ res.status(200).json({ok: true, message: "Codigo enviado con exito!"})
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/index.html'))
 });
+app.get('/anda', (req, res) => {
+    res.send("anda la pagina")
+});
 
 app.listen(port, () => {
     console.log(`Servidor web iniciado en el puerto ${port}`);

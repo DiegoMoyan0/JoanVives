@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat classic", "glacial indifference" ;
     background-color: #1e2324;
     color: #f2ede3;
 }
@@ -88,7 +88,7 @@ body {
     /* Ajusta el tamaño de la fecha */
     font-weight: 700;
     text-transform: uppercase;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .text-hero {
@@ -120,10 +120,13 @@ body {
 }
 
 .p-number {
-    font-size: 2rem;
+    font-size: 24px;
 
 }
 
+#inscribite {
+    margin-top: 20px;
+}
 
 /* ABOUT US */
 .container-ABOUT {
@@ -161,7 +164,7 @@ body {
 
 #texto-fecha {
     align-items: center;
-    font-size: 2rem;
+    font-size: 35px;
 }
 
 /* CONTACTO */
@@ -185,9 +188,8 @@ body {
 }
 
 #title-contact {
-    font-family: "Clash Display", sans-serif;
     font-size: 2.25rem;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
     text-align: center;
 }
 

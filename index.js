@@ -5,11 +5,15 @@ const port = process.env.PORT || 3000;
 const transporter = require("./mailer")
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
 
-app.get("/enviar-correo", async function (req, res) {
+app.post("/enviar-correo", async function (req, res) {
+    const  { email }  = req.body;
+    const  { nombre }  = req.body;
+    const mailEnvio = "diegomoyano02@gmail.com";
     const result = await transporter.sendMail({
-      from: 'diegomoyano02@gmail.com',
-      to: 'diiegomoyano02@gmail.com',
+      from: `Joan Vives ${mailEnvio}`,
+      to: email,
       subject: "Tu entrada al Reto deportivo",
       html: `
         <p>Hola! Bienvenidx al Reto!</p>

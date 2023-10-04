@@ -8,7 +8,359 @@
     <title>Desafio 5 dias</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
+<style>
+    /* EDITANDO HTML */
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1e2324;
+    color: #f2ede3;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    margin: 1rem 0;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363f41;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e2324;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #FC8335;
+}
+
+/* Botón dorado */
+.btn-gold {
+    background-color: #FC8335;
+    color: #f2ede3;
+    transition: 0.2s;
+}
+
+.modal-btn-gold {
+    background-color: #FC8335;
+    color: #f2ede3;
+    transition: 0.2s;
+}
+
+.modal-btn-gold:hover {
+    background-color: transparent;
+    background-color: #FC8335;
+}
+
+.btn-gold:hover {
+    background-color: transparent;
+    outline: 0.0625rem solid #FC8335;
+    color: #f2ede3;
+}
+
+/* NAVBAR */
+
+.bg-darkblue {
+    background-color: rgba(23, 26, 27, 0.5);
+}
+
+#hero {
+    background: rgba(0, 0, 0, 0.35) url(/images/_MG_5185.jpg) center center no-repeat;
+    background-size: cover;
+    color: #f2ede3;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+.hero-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px !important; /* Ajusta el tamaño del h1 */
+    line-height: 1.2em;
+}
+
+.fecha-hero {
+    font-size: 1rem !important; /* Ajusta el tamaño de la fecha */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.text-hero {
+    font-size: 1rem !important; /* Ajusta el tamaño del texto hero */
+    font-weight: 800 !important;
+    line-height: 1.2em ; /* Ajusta el espaciado entre líneas del texto */
+}
+
+.row {
+    text-align: center;
+}
+
+/* RETO */
+.container-RETO{
+    background-color: #FC8335;
+    text-align: center;
+}
+#caja-RETO {
+    background-image: url('/images/_MG_5928.JPG');
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#texto-RETO {
+    /* Estilo para el texto */
+    padding: 20px;
+}
+
+.title-number{
+    
+    font-size: 3rem;
+}
+.p-number{
+    font-size: 2rem;
+
+}
+
+
+/* ABOUT US */
+.container-ABOUT {
+    margin: 1rem;
+  }
+  
+  #caja-ABOUT {
+    background-image: url('/images/_MG_6188.JPG');
+    border-radius: 10px;
+    background-size: contain; /* Cambiamos a 'contain' para ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+  #texto-ABOUT {
+    /* Estilo para el texto */
+    padding: 20px;
+    display: flex; /* Usamos flexbox para centrar verticalmente el contenido */
+    flex-direction: column; /* Colocamos el contenido en una columna */
+    justify-content: center; /* Centramos verticalmente el contenido */
+  }
+  
+
+/* FECHA */
+.container-fecha{
+    background-color: #FC8335;
+    padding: 2rem;
+}
+
+#texto-fecha{
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* CONTACTO */
+
+#contacto {
+    /* width: 95vw; */
+    margin: auto;
+}
+
+#container-contact {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #1e2324;
+    padding: 3.75rem 4.5rem;
+}
+
+#container-contact form {
+    text-align: center;
+    min-width: 30rem;
+}
+
+#title-contact {
+    font-family: "Clash Display", sans-serif;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-titles {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Estilo para el pop-up */
+
+#terminos{
+color: blue;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e2324;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+
+/*:::FOOTER:::*/
+
+.pie-pagina {
+    margin-top: 5vh;
+    background-color: #1e2324;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    /* max-width: 75rem; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.125rem;
+    padding: 2.8125rem 0rem;
+}
+
+.pie-pagina .grupo-1 .box .figure-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box .figure-logo .figure-logo-img {
+    width: 11.25rem;
+    transition: all 300ms ease;
+    color: #f2ede3;
+}
+
+.pie-pagina .grupo-1 .box .figure-logo .figure-logo-img:hover {
+    filter: drop-shadow(1px 1px 2px #a47e1b);
+}
+
+.pie-pagina .grupo-1 .box h3 {
+    color: #f2ede3;
+    margin-bottom: 0.3125rem;
+    font-size: 1rem;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #f2ede3;
+    margin-bottom: 0.3125rem;
+    font-size: 12px;
+}
+
+.pie-pagina .grupo-1 .box-aclaracion {
+    max-width: 25rem;
+}
+
+.box-aclaracion h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.icon-rd {
+    display: inline-block;
+    padding: 0 0.9375rem;
+    text-decoration: none;
+    color: #f2ede3;
+    margin-right: 0.625rem;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.icon-rd:hover {
+    color: #a47e1b;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #171a1b;
+    height: auto;
+    padding: 0.4688rem 0.625rem;
+    text-align: center;
+    color: #f2ede3;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 0.75rem;
+}
+
+.pie-pagina hr {
+    display: none;
+    height: 0.0625rem;
+}
+
+/* ======= MEDIA QUERIES ======= */
+/* CONTACTO */
+
+@media only screen and (max-width: 670px) {
+    #container-contact {
+        padding: 3rem;
+    }
+
+    #container-contact form {
+        min-width: auto;
+    }
+}
+
+/* FOOTER */
+@media screen and (max-width: 840px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.875rem;
+        padding: 2.1875rem 0rem;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .box-aclaracion {
+        margin: auto auto;
+        text-align: center;
+    }
+}
+</style>
 </head>
 
 <body>

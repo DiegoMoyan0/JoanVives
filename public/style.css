@@ -52,6 +52,10 @@ p{
     background-color: #F75F1E;
     color: #f2ede3;
     transition: 0.2s;
+    max-width: 150px; /* Ajusta el ancho máximo deseado */
+    padding: 10px 20px; /* Ajusta el relleno deseado (arriba y abajo, izquierda y derecha) */
+    border: 4px solid #D63B0D; /* Establece el color del borde más oscuro */
+
 }
 
 .modal-btn-gold {
@@ -139,7 +143,7 @@ p{
 
 #inscribite {
     margin: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -174,6 +178,7 @@ border-radius: 5px;
     /* Colocamos el contenido en una columna */
     justify-content: center;
     /* Centramos verticalmente el contenido */
+    line-height: 2;
 }
 
 
@@ -395,5 +400,22 @@ color: black;
     .box-aclaracion {
         margin: auto auto;
         text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important;
+        /* Ajusta el tamaño del título para escritorio */
+    }
+
+    .fecha-hero {
+        font-size: 2rem !important;
+        /* Ajusta el tamaño de la fecha para escritorio */
+    }
+
+    .text-hero {
+        font-size: 3rem !important;
+        /* Ajusta el tamaño del texto hero para escritorio */
     }
 }

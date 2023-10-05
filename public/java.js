@@ -51,24 +51,23 @@
   // Escuchar el evento scroll
   window.addEventListener("scroll", handleScroll);
 
-  // Función para mostrar el pop-up
-function showPopup() {
+  const terminos = document.getElementById("terminos");
   const popup = document.getElementById("popup");
-  popup.style.display = "block";
-}
+  const closePopupButton = document.getElementById("close-popup");
 
-// Función para cerrar el pop-up
-function closePopup() {
-  const popup = document.getElementById("popup");
-  popup.style.display = "none";
-}
+  terminos.addEventListener("click", function (e) {
+      e.preventDefault(); // Evita que el enlace siga el URL
+      showPopup();
+  });
 
-// Escuchar el evento de clic en el checkbox
-const checkbox = document.getElementById("termsCheckbox");
-checkbox.addEventListener("click", function () {
-  if (checkbox.checked) {
-    showPopup();
-  } else {
-    closePopup();
+  closePopupButton.addEventListener("click", function () {
+      closePopup();
+  });
+
+  function showPopup() {
+      popup.style.display = "block";
   }
-});
+
+  function closePopup() {
+      popup.style.display = "none";
+  }

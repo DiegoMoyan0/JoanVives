@@ -71,3 +71,12 @@
   function closePopup() {
       popup.style.display = "none";
   }
+
+  function validateForm() {
+    var checkBox = document.getElementById("termsCheckbox");
+    if (!checkBox.checked) {
+        alert("Debe aceptar los términos y condiciones para continuar.");
+        return false; // Detener el envío del formulario.
+    }
+    return true; // Continuar con el envío del formulario.
+}

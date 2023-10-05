@@ -58,42 +58,6 @@
                 </div>
             </div>
         </section>
-
-        <h3 class="text-center" id="inscribite">INSCRIBITE</h3>
-        <div id="container-contact">
-            <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" method="POST">
-                <div class="d-grid gap-3">
-                    <div class="mb-3">
-                        <label for="InputName" class="form-label">Nombre y apellido</label>
-                        <input type="text" name="nombre" class="form-control" id="InputName" placeholder="Escriba su nombre..."
-                            required />
-                        <div class="invalid-feedback">
-                            Debe rellenar este campo para continuar.
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="correo@ejemplo.com" required />
-
-                        <div class="invalid-feedback">
-                            Debe rellenar este campo para continuar.
-                        </div>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
-                        <label class="form-check-label" for="termsCheckbox">Acepto los <a id="terminos">términos y
-                                condiciones</a></label>
-                        <div class="invalid-feedback">
-                            Debe aceptar los términos y condiciones para continuar.
-                        </div>
-                    </div>
-                    <button type="submit" href="/enviar-correo" class="btn btn-gold">
-                        Enviar
-                    </button>
-                </div>
-            </form>
-        </div>
         <section>
             <div class="container-RETO">
                 <div class="row">
@@ -166,42 +130,6 @@
             </div>
 
         </section>
-        <h3 class="text-center" id="inscribite">INSCRIBITE</h3>
-        <div id="container-contact">
-            <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" method="POST">
-                <div class="d-grid gap-3">
-                    <div class="mb-3">
-                        <label for="InputName" class="form-label">Nombre y apellido</label>
-                        <input type="text" name="nombre" class="form-control" id="InputName" placeholder="Escriba su nombre..."
-                            required />
-                        <div class="invalid-feedback">
-                            Debe rellenar este campo para continuar.
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="correo@ejemplo.com" required />
-
-                        <div class="invalid-feedback">
-                            Debe rellenar este campo para continuar.
-                        </div>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
-                        <label class="form-check-label" for="termsCheckbox">Acepto los <a id="terminos">términos y
-                                condiciones</a></label>
-                        <div class="invalid-feedback">
-                            Debe aceptar los términos y condiciones para continuar.
-                        </div>
-                    </div>
-                    <button type="submit" href="/enviar-correo" class="btn btn-gold">
-                        Enviar
-                    </button>
-                </div>
-            </form>
-        </div>
-        <hr>
         <section id="about">
             <div class="container-ABOUT">
                 <div class="row">
@@ -234,12 +162,10 @@
 
 
 
-        <h2 id="title-contact">
-            Dejame tus datos para participar
-        </h2>
+        <h3 class="text-center" id="inscribite">INSCRIBITE</h3>
         <div id="container-contact">
             <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" method="POST">
+            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" onsubmit="return validateForm()" method="POST">
                 <div class="d-grid gap-3">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Nombre y apellido</label>
@@ -259,8 +185,8 @@
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
-                        <label class="form-check-label" for="termsCheckbox">Acepto los <a id="terminos">términos y
-                                condiciones</a></label>
+                        <p class="form-check-label">Acepto los <a id="terminos">términos y
+                                condiciones</a></p>
                         <div class="invalid-feedback">
                             Debe aceptar los términos y condiciones para continuar.
                         </div>
@@ -406,7 +332,8 @@
             </div>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="/java.js"></script>
 </body>

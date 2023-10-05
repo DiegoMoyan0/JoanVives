@@ -28,7 +28,6 @@ app.post("/enviar-correo", async function (req, res) {
       `,
     });
   
-console.log({result});
 res.sendFile(path.join(__dirname,'public', '/acces.html'))
 });
 

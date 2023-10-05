@@ -140,8 +140,8 @@ body {
     /* Cambiamos a 'contain' para ajustar la imagen al tamaño del contenedor */
     background-repeat: no-repeat;
     background-position: center;
-    height: 30vh;
-    margin-bottom: 20px;
+    height: 40vh;
+    margin: 0;
     /* Ajusta la altura según tus necesidades */
 }
 

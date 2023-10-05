@@ -9,7 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post("/enviar-correo", async function (req, res) {
     const  { email }  = req.body;
-    const  { nombre }  = req.body;
     const mailEnvio = "diegomoyano02@gmail.com";
     const result = await transporter.sendMail({
       from: `Joan Vives ${mailEnvio}`,
@@ -20,7 +19,7 @@ app.post("/enviar-correo", async function (req, res) {
         <p>Recibes este correo porque ya casi formas parte del grupo.</p>
         <p>Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.</p>
         <p>Accede ahora para no perderte nada y estar preparadx una vez empecemos.</p>
-        <a href="URL_DEL_GRUPO_DE_WHATSAPP">
+        <a href="https://chat.whatsapp.com/LsQjZpF1n5qIk6vu7ufnQZ">
           <button style="background-color: #25d366; color: white; padding: 10px 20px; border: none; border-radius: 5px; text-align: center;">Link de Whatsapp</button></a>
         <p>Fecha: Del 17 de octubre al 21 de octubre.</p>
         <p>Importante que te reserves el día 21 de octubre a las 19:00.</p>

@@ -73,8 +73,11 @@
   }
 
   function validateForm() {
+    var nombre = document.getElementById("InputName").value;
+    var email = document.getElementById("exampleInputEmail1").value;
+
     var checkBox = document.getElementById("termsCheckbox");
-    if (!checkBox.checked) {
+    if (nombre === "" || email === "" || !termsCheckbox) {
         // Mostrar el modal de Bootstrap en lugar de la alerta.
         var modal = new bootstrap.Modal(document.getElementById('myModal'));
         modal.show();

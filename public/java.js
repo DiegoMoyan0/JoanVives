@@ -75,7 +75,9 @@
   function validateForm() {
     var checkBox = document.getElementById("termsCheckbox");
     if (!checkBox.checked) {
-        alert("Debe aceptar los términos y condiciones para continuar.");
+        // Mostrar el modal de Bootstrap en lugar de la alerta.
+        var modal = new bootstrap.Modal(document.getElementById('myModal'));
+        modal.show();
         return false; // Detener el envío del formulario.
     }
     return true; // Continuar con el envío del formulario.

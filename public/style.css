@@ -198,7 +198,9 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
 }
-
+#myModal{
+color: black;
+}
 /* Estilo para el pop-up */
 
 #terminos {

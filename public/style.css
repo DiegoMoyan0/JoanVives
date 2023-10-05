@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
 /* EDITANDO HTML */
 html {
     font-size: 16px;
@@ -11,11 +14,16 @@ html {
 }
 
 body {
-    font-family: "Montserrat classic", "glacial indifference" ;
+    font-family:'Montserrat','Glacial Indifference' ;
     background-color: #1e2324;
     color: #f2ede3;
 }
-
+p{
+    font-size: 1.3rem;
+}
+.form-label{
+    font-size: 1.3rem;
+}
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -35,30 +43,31 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #FC8335;
+    background: #F75F1E;
 }
 
 /* Botón dorado */
 .btn-gold {
-    background-color: #FC8335;
+    font-size: 1.2rem;
+    background-color: #F75F1E;
     color: #f2ede3;
     transition: 0.2s;
 }
 
 .modal-btn-gold {
-    background-color: #FC8335;
+    background-color: #F75F1E;
     color: #f2ede3;
     transition: 0.2s;
 }
 
 .modal-btn-gold:hover {
     background-color: transparent;
-    background-color: #FC8335;
+    background-color: #F75F1E;
 }
 
 .btn-gold:hover {
     background-color: transparent;
-    outline: 0.0625rem solid #FC8335;
+    outline: 0.0625rem solid #F75F1E;
     color: #f2ede3;
 }
 
@@ -69,7 +78,8 @@ body {
 }
 
 #hero {
-    background: rgba(0, 0, 0, 0.7) url(/images/hero.jpeg) center center no-repeat;
+    background: rgba(0, 0, 0, 0.4) url(/images/hero.jpeg) center center no-repeat;
+    background-size: cover; /* Esto hará que la imagen ocupe todo el ancho */
     color: #f2ede3;
     background-blend-mode: darken;
     height: 100vh;
@@ -78,21 +88,24 @@ body {
 .hero-title {
     text-align: center;
     font-weight: 400;
-    font-size: 32px !important;
+    font-size: 1.8rem !important;
     /* Ajusta el tamaño del h1 */
     line-height: 1.2em;
+    padding: 30px;
 }
 
 .fecha-hero {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     /* Ajusta el tamaño de la fecha */
     font-weight: 700;
     text-transform: uppercase;
     margin: 10px auto;
+    padding: 30px;
 }
 
 .text-hero {
-    font-size: 1rem !important;
+    padding: 10px;
+    font-size: 2rem !important;
     /* Ajusta el tamaño del texto hero */
     font-weight: 800 !important;
     line-height: 1.2em;
@@ -105,7 +118,7 @@ body {
 
 /* RETO */
 .container-RETO {
-    background-color: #FC8335;
+    background-color: #F75F1E;
     text-align: center;
 }
 
@@ -125,12 +138,19 @@ body {
 }
 
 #inscribite {
-    margin-top: 20px;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+
+.img-custom {
+    height: 450px; /* Ajusta la altura deseada en píxeles */
+border-radius: 5px;
 }
 
 /* ABOUT US */
 .container-ABOUT {
-    margin: 1rem;
+    margin: 5rem auto;
 }
 
 #caja-ABOUT {
@@ -159,7 +179,7 @@ body {
 
 /* FECHA */
 .container-fecha {
-    background-color: #FC8335;
+    background-color: #F75F1E;
     padding: 2rem;
 }
 
@@ -167,7 +187,10 @@ body {
     align-items: center;
     font-size: 35px;
 }
+.p-fecha{
+    font-size: 35px;
 
+}
 /* CONTACTO */
 
 #contacto {
@@ -204,7 +227,10 @@ color: black;
 /* Estilo para el pop-up */
 
 #terminos {
-    color: blue;
+    color: #00a2ff;
+}
+#terminos2 {
+    color: #00a2ff;
 }
 
 .popup {
@@ -239,6 +265,20 @@ color: black;
 }
 
 
+#enhorabuena{
+    margin: 3rem 0;
+}
+.lead{
+    margin: 1rem auto;
+}
+.btn-green {
+    font-size: 1.3rem;
+    background-color: #2fff40;
+    color: #f2ede3;
+    transition: 0.2s;
+    margin: 3rem auto;
+}
+
 /*:::FOOTER:::*/
 
 .pie-pagina {
@@ -271,7 +311,7 @@ color: black;
 }
 
 .pie-pagina .grupo-1 .box .figure-logo .figure-logo-img:hover {
-    filter: drop-shadow(1px 1px 2px #a47e1b);
+    filter: drop-shadow(1px 1px 2px #F75F1E);
 }
 
 .pie-pagina .grupo-1 .box h3 {
@@ -306,7 +346,7 @@ color: black;
 }
 
 .icon-rd:hover {
-    color: #a47e1b;
+    color: #F75F1E;
 }
 
 .pie-pagina .grupo-2 {

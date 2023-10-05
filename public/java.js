@@ -52,10 +52,16 @@
   window.addEventListener("scroll", handleScroll);
 
   const terminos = document.getElementById("terminos");
+  const terminos2 = document.getElementById("terminos2");
   const popup = document.getElementById("popup");
   const closePopupButton = document.getElementById("close-popup");
 
   terminos.addEventListener("click", function (e) {
+      e.preventDefault(); // Evita que el enlace siga el URL
+      showPopup();
+  });
+
+  terminos2.addEventListener("click", function (e) {
       e.preventDefault(); // Evita que el enlace siga el URL
       showPopup();
   });
@@ -76,8 +82,22 @@
     var nombre = document.getElementById("InputName").value;
     var email = document.getElementById("exampleInputEmail1").value;
 
-    var checkBox = document.getElementById("termsCheckbox");
-    if (nombre === "" || email === "" || !termsCheckbox) {
+    var checkBox = document.getElementById("termsCheckbox").checked;
+    if (nombre === "" || email === "" || !checkBox) {
+        // Mostrar el modal de Bootstrap en lugar de la alerta.
+        var modal = new bootstrap.Modal(document.getElementById('myModal'));
+        modal.show();
+        return false; // Detener el envío del formulario.
+    }
+    return true; // Continuar con el envío del formulario.
+}
+
+  function validateForm2() {
+    var nombre2 = document.getElementById("InputName2").value;
+    var email2 = document.getElementById("exampleInputEmail2").value;
+
+    var checkBox2 = document.getElementById("termsCheckbox2").checked;
+    if (nombre2 === "" || email2 === "" || !checkBox2) {
         // Mostrar el modal de Bootstrap en lugar de la alerta.
         var modal = new bootstrap.Modal(document.getElementById('myModal'));
         modal.show();

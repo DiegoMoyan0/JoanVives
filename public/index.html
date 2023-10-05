@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue fixed-top">
             <div class="container-md">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,29 +35,69 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
     <main>
         <!-- SECTION HERO -->
         <section id="hero" class="d-flex align-items-center">
             <div class="container d-flex flex-column align-items-center align-items-md-center">
-                <h1 class="hero-title"> <b>DESAFIO</b> PARA PERSONAS QUÉ QUIEREN INTEGRAR EL <b>DEPORTE</b> COMO HABITO DE POR <b>VIDA</b>
+                <h1 class="hero-title"> <b>DESAFÍO</b> PARA PERSONAS QUÉ QUIEREN INTEGRAR EL <b>DEPORTE</b> COMO HÁBITO
+                    DE POR <b>VIDA</b>
                 </h1>
                 <p class="fecha-hero text-center">
                     Del 17 al 21 de Octubre <br>Online y Gratuito </p>
-                <p class="text-center text-md-center text-hero">
-                    ¿Cómo pasar de ser poco constante con el deporte o apenas entrenar, a disfrutar del
-                    entrenamiento y tener el deporte como hábito de por vida? </p>
+                <p class="text-center text-md-center text-hero"> <b>
+
+                        ¿Cómo pasar de ser poco constante con el deporte o apenas entrenar, a disfrutar del
+                        entrenamiento y tener el deporte como hábito de por vida? </p>
+                </b>
                 <div
                     class="d-flex flex-column flex-sm-row gap-4 flex-wrap w-100 justify-content-center justify-content-md-center">
-                    <a class="btn btn-gold px-4 text-light" href="#inscribite">
+                    <!-- <a class="btn btn-gold px-4 text-light" href="#inscribite">
                         Quiero Participar
-                    </a>
-                    <a class="btn btn-outline-light px-4" href="#about">
-                        Acerca de mi
-                    </a>
+                    </a> -->
+                    <p class="text-center">Joan Vives</p>
+
                 </div>
             </div>
         </section>
+
+        <h3 class="text-start" id="inscribite">INSCRÍBITE</h3>
+        <div id="container-contact">
+            <!-- Form -->
+            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo"
+                onsubmit="return validateForm()" method="POST">
+                <div class="d-grid gap-3">
+                    <div class="mb-3">
+                        <label for="InputName" class="form-label">Nombre y apellido</label>
+                        <input type="text" name="nombre" class="form-control" id="InputName"
+                            placeholder="Escriba su nombre..." required />
+                        <div class="invalid-feedback">
+                            Debe rellenar este campo para continuar.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="correo@ejemplo.com" required />
+
+                        <div class="invalid-feedback">
+                            Debe rellenar este campo para continuar.
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
+                        <p class="form-check-label">Acepto los <a id="terminos">términos y
+                                condiciones</a></p>
+                        <div class="invalid-feedback">
+                            Debe aceptar los términos y condiciones para continuar.
+                        </div>
+                    </div>
+                    <button type="submit" href="/enviar-correo" class="btn btn-gold">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
         <section>
             <div class="container-RETO">
                 <div class="row">
@@ -93,7 +133,10 @@
         <section>
             <div class="container-ABOUT">
                 <div class="row">
-                    <div class="col-md-12" id="texto-ABOUT">
+                    <div class="col-md-5">
+                        <img src="/images/amanecer.jpeg" alt="Imagen de la sección" class="img-fluid img-custom">
+                    </div>
+                    <div class="col-md-7 text-start" id="texto-ABOUT">
                         <h2>ES PARA TI SI...</h2>
                         <p>
                             <i class="bi bi-check2"></i> Te cuesta ser constante <br><br>
@@ -113,20 +156,20 @@
                             <i class="bi bi-check2"></i> Te gustaría tener más energía en tu día a día <br><br>
                         </p>
                     </div>
-                    <div class="container-RETO">
-
-                        <div class="section">
-                            <h4 class="title-number" id="number-2">+0</h4>
-                        </div>
-                        <p class="p-number"> PERSONAS ENTRENADAS </p>
-                        <br>
-                        <div class="section">
-                            <h4 class="title-number" id="number-1">+0</h4>
-                        </div>
-                        <p class="p-number"> PERSONAS EN LA COMUNIDAD </p>
-
-                    </div>
                 </div>
+            </div>
+            <div class="container-RETO">
+
+                <div class="section">
+                    <h4 class="title-number" id="number-2">+0</h4>
+                </div>
+                <p class="p-number"> PERSONAS ENTRENADAS </p>
+                <br>
+                <div class="section">
+                    <h4 class="title-number" id="number-1">+0</h4>
+                </div>
+                <p class="p-number"> PERSONAS EN LA COMUNIDAD </p>
+
             </div>
 
         </section>
@@ -134,7 +177,7 @@
             <div class="container-ABOUT">
                 <div class="row">
                     <div class="col-md-6" id="texto-ABOUT">
-                        <h2>ACERCA DE MI</h2>
+                        <h2>CONOCE A JOAN VIVES</h2>
                         <p>
                             Fundador de Impulso y coach en el programa de entrenamiento Impulso que hace que las
                             personas a través de un cambio de mentalidad adquieran el deporte como hábito de por
@@ -151,57 +194,59 @@
             <div class="container-fecha">
                 <div class="row">
                     <div class="col-md-6" id="texto-fecha">
-                        <p> Online y Gratuito </p>
+                        <p class="p-fecha"> Online y Gratuito </p>
                     </div>
                     <div class="col-md-6" id="texto-fecha">
-                        <p> del 17 al 24 de octubre </p>
+                        <p class="p-fecha"> del 17 al 24 de octubre </p>
                     </div>
                 </div>
             </div>
         </section>
 
-<!-- Pop-up modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Por favor, complete todos los campos y acepte los términos y condiciones.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Pop-up modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Por favor, complete todos los campos y acepte los términos y condiciones.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-        <h3 class="text-center" id="inscribite">INSCRIBITE</h3>
+        <h3 class="text-start" id="inscribite">INSCRÍBITE</h3>
         <div id="container-contact">
             <!-- Form -->
-            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo" onsubmit="return validateForm()" method="POST">
+            <form class="col-12 col-lg-5 p-0 mb-lg-0 mb-4 needs-validation" novalidate action="/enviar-correo"
+                onsubmit="return validateForm2()" method="POST">
                 <div class="d-grid gap-3">
                     <div class="mb-3">
                         <label for="InputName" class="form-label">Nombre y apellido</label>
-                        <input type="text" name="nombre" class="form-control" id="InputName" placeholder="Escriba su nombre..."
-                            required />
+                        <input type="text" name="nombre" class="form-control" id="InputName2"
+                            placeholder="Escriba su nombre..." required />
                         <div class="invalid-feedback">
                             Debe rellenar este campo para continuar.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="correo@ejemplo.com" required />
+                        <label for="exampleInputEmail2" class="form-label">Correo electrónico</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail2"
+                            placeholder="correo@ejemplo.com" required />
 
                         <div class="invalid-feedback">
                             Debe rellenar este campo para continuar.
                         </div>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="termsCheckbox" required />
-                        <p class="form-check-label">Acepto los <a id="terminos">términos y
+                        <input type="checkbox" class="form-check-input" id="termsCheckbox2" required />
+                        <p class="form-check-label">Acepto los <a id="terminos2">términos y
                                 condiciones</a></p>
                         <div class="invalid-feedback">
                             Debe aceptar los términos y condiciones para continuar.
@@ -346,7 +391,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="/java.js"></script>

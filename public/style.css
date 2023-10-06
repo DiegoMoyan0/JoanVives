@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
 
-/* EDITANDO HTML */
 html {
     font-size: 16px;
 }
@@ -23,13 +22,6 @@ p {
     font-size: 1.3rem;
 }
 
-.form-label {
-    font-size: 1.3rem;
-}
-.form-control{
-    border-radius: 2px;
-    max-width: 600px;
-}
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -84,7 +76,7 @@ p {
     color: #f2ede3;
 }
 
-/* NAVBAR */
+/*------------------------------------------ HERO ------------------------------------------------*/
 
 .bg-darkblue {
     background-color: rgba(23, 26, 27, 0.5);
@@ -105,7 +97,7 @@ p {
     font-size: 1.8rem !important;
     /* Ajusta el tamaño del h1 */
     line-height: 1.3em;
-    padding: 30px;
+    padding: 1rem;
 }
 
 .fecha-hero {
@@ -114,15 +106,15 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     margin: 5px auto;
-    padding: 30px;
+    padding: 1rem;
 }
 
 .text-hero {
     padding: 10px;
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     /* Ajusta el tamaño del texto hero */
     font-weight: 800 !important;
-    line-height: 1.3em;
+    line-height: 1em;
     /* Ajusta el espaciado entre líneas del texto */
 }
 
@@ -130,15 +122,66 @@ p {
     text-align: center;
 }
 
-/* RETO */
-.container-RETO {
+/*------------------------------------------ ES PARA TI SI ------------------------------------------------*/
+
+
+.parati {
+    font-size: 1.3rem;
+    margin-top: 2rem ;
+}
+
+.img-custom {
+    height: 450px;
+    /* Ajusta la altura deseada en píxeles */
+    border-radius: 5px;
+}
+
+#title-espara{
+    font-size: 2.5rem ;
+    margin: 0.8rem 0;
+}
+.container-espara {
+    margin: 1rem auto;
+}
+
+#caja-espara {
+    background-image: url(/images/_MG_6188.jpg);
+    border-radius: 10px;
+    background-size: contain !important;
+    /* Cambiamos a 'contain' para ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+#texto-espara {
+    /* Estilo para el texto */
+    padding: 20px;
+    display: flex;
+    /* Usamos flexbox para centrar verticalmente el contenido */
+    flex-direction: column;
+    /* Colocamos el contenido en una columna */
+    justify-content: center;
+    /* Centramos verticalmente el contenido */
+    line-height: 1.3;
+}
+
+/*------------------------------------------ RETO ------------------------------------------------*/
+/* .container-RETO {
     background-color: #F75F1E;
     text-align: center;
 }
 
 #texto-RETO {
-    /* Estilo para el texto */
     padding: 20px;
+} */
+
+/*------------------------------------------ NUMBER ------------------------------------------------*/
+
+.container-number {
+    background-color: #F75F1E;
+    text-align: center;
 }
 
 .title-number {
@@ -151,23 +194,14 @@ p {
 
 }
 
-#inscribite {
-    margin: 20px;
-    font-size: 3rem;
-}
-
-
-.img-custom {
-    height: 450px;
-    /* Ajusta la altura deseada en píxeles */
-    border-radius: 5px;
-}
-
-/* ABOUT US */
+/*------------------------------------------ ABOUT US ------------------------------------------------*/
 .container-ABOUT {
     margin: 5rem auto;
 }
-
+#title-about{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
 #caja-ABOUT {
     background-image: url(/images/_MG_6188.jpg);
     border-radius: 10px;
@@ -189,19 +223,13 @@ p {
     /* Colocamos el contenido en una columna */
     justify-content: center;
     /* Centramos verticalmente el contenido */
-    line-height: 2;
+    line-height: 1.5;
 }
 
-
-
-.parati {
-font-size: 1.5rem;
-}
-
-/* FECHA */
+/*------------------------------------------ FECHA ------------------------------------------------*/
 .container-fecha {
     background-color: #F75F1E;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 #texto-fecha {
@@ -214,7 +242,7 @@ font-size: 1.5rem;
 
 }
 
-/* CONTACTO */
+/*------------------------------------------ CONTACTO ------------------------------------------------*/
 
 #contacto {
     /* width: 95vw; */
@@ -234,22 +262,29 @@ font-size: 1.5rem;
     min-width: 30rem;
 }
 
-#title-contact {
-    font-size: 2.25rem;
-    margin: 1rem auto !important;
-    text-align: center;
+#inscribite {
+    margin: 20px;
+    font-size: 3rem;
 }
 
 .contact-titles {
     font-size: 1.5rem;
     font-weight: 600;
 }
+.form-label {
+    font-size: 1.3rem;
+}
+
+.form-control {
+    border-radius: 2px;
+    max-width: 600px;
+}
+
+/*------------------------------------------ MODAL ------------------------------------------------*/
 
 #myModal {
     color: black;
 }
-
-/* Estilo para el pop-up */
 
 #terminos {
     color: #00a2ff;
@@ -290,6 +325,7 @@ font-size: 1.5rem;
     cursor: pointer;
 }
 
+/*------------------------------------------ ACCES ------------------------------------------------*/
 
 #enhorabuena {
     margin: 3rem 0;
@@ -307,7 +343,7 @@ font-size: 1.5rem;
     margin: 3rem auto;
 }
 
-/*:::FOOTER:::*/
+/*------------------------------------------ FOOTER ------------------------------------------------*/
 
 .pie-pagina {
     margin-top: 5vh;
@@ -394,7 +430,7 @@ font-size: 1.5rem;
     height: 0.0625rem;
 }
 
-/* ======= MEDIA QUERIES ======= */
+/*------------------------------------------ QUERIES ------------------------------------------------*/
 /* CONTACTO */
 
 @media only screen and (max-width: 670px) {
@@ -404,6 +440,12 @@ font-size: 1.5rem;
 
     #container-contact form {
         min-width: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    #inscribite {
+        padding-left: 200px;
     }
 }
 
@@ -426,25 +468,22 @@ font-size: 1.5rem;
     }
 }
 
+
+/* HERO */
 @media (min-width: 768px) {
     .hero-title {
         font-size: 2.5rem !important;
         /* Ajusta el tamaño del título para escritorio */
     }
-    
+
     .fecha-hero {
         font-size: 2rem !important;
         /* Ajusta el tamaño de la fecha para escritorio */
     }
-    
+
     .text-hero {
         font-size: 3rem !important;
         /* Ajusta el tamaño del texto hero para escritorio */
     }
-    
+
 }
-    @media (min-width: 1100px) {
-        #inscribite {
-            padding-left: 200px;
-        }
-    }

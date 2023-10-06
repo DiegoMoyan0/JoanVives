@@ -19,8 +19,9 @@ app.post("/enviar-correo", async function (req, res) {
         <p>Recibes este correo porque ya casi formas parte del grupo.</p>
         <p><b>Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.</b></p>
         <p>Accede ahora para no perderte nada y estar preparadx una vez empecemos.</p>
-        <a href="https://chat.whatsapp.com/LsQjZpF1n5qIk6vu7ufnQZ">
-          <button style="background-color: #25d366; color: white; padding: 20px 35px; border: none; border-radius: 5px; text-align: center;">Link de Whatsapp</button></a>
+        <a href="https://chat.whatsapp.com/LsQjZpF1n5qIk6vu7ufnQZ" style="display: block; text-align: center; margin: 0 auto;">
+  <button style="background-color: #25d366; color: white; padding: 30px 50px; border: none; border-radius: 5px; text-align: center; font-size: 18px;">Entra aquí al desafío</button>
+</a>
         <p>Fecha: Del 17 de octubre al 21 de octubre.</p>
         <p><b>Importante que te reserves el día 21 de octubre a las 19:00.</b></p>
         <p>Voy a hacer una Masterclass en directo para llevar tu mentalidad al siguiente nivel.</p>

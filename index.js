@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post("/enviar-correo", async function (req, res) {
     const  { email }  = req.body;
-    const mailEnvio = "diegomoyano02@gmail.com";
+    const mailEnvio = "joanvivesy@gmail.com";
     const result = await transporter.sendMail({
       from: `Joan Vives ${mailEnvio}`,
       to: email,

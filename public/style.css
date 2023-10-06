@@ -234,7 +234,7 @@ p {
 
 #texto-fecha {
     align-items: center;
-    font-size: 35px;
+    font-size: 29px;
 }
 
 .p-fecha {
@@ -264,7 +264,7 @@ p {
 
 #inscribite {
     margin: 20px;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .contact-titles {
@@ -326,21 +326,25 @@ p {
 }
 
 /*------------------------------------------ ACCES ------------------------------------------------*/
-
+.title{
+    font-size: 3rem;
+    font-weight: bold !important;
+}
 #enhorabuena {
     margin: 3rem 0;
 }
 
 .lead {
+    font-size: 1rem;
     margin: 1rem auto;
 }
 
 .btn-green {
     font-size: 1.3rem;
     background-color: #2fff40;
-    color: #f2ede3;
+    color: black !important;
     transition: 0.2s;
-    margin: 3rem auto;
+    margin-bottom: 5rem;
 }
 
 /*------------------------------------------ FOOTER ------------------------------------------------*/

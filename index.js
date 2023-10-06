@@ -16,12 +16,13 @@ app.post("/enviar-correo", async function (req, res) {
       subject: "Tu Acceso al Desafío Deportivo",
       html: `
       <div style="text-align: center;">
-        <p>Hola ¡Bienvenid@ al Desafío! 🔥FELICIDADES🔥</p>
+        <p>Hola ¡Bienvenid@ al Desafío!</p> 
+        <p>🔥FELICIDADES🔥</p>
         <p>Recibes este correo porque ya casi formas parte del grupo.</p>
         <p><b>Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.</b></p>
         <p>Accede ahora para no perderte nada y estar preparad@ una vez empecemos💥</p>
         <a href="https://chat.whatsapp.com/LsQjZpF1n5qIk6vu7ufnQZ" style="display: block; text-align: center; margin: 0 auto;">
-  <button style="background-color: #25d366; color: white; padding: 25px 40px; border: none; border-radius: 5px; text-align: center; font-size: 18px;">Entra aquí al desafío</button>
+  <button style="background-color: #25d366; color: white; padding: 15px 30px; border: none; border-radius: 5px; text-align: center; font-size: 18px;">Entra aquí al desafío</button>
 </a>
 <p><b>Del lunes 17 de octubre al sábado 21 de octubre</b>estaremos compartiendo 5 días repletos de valor</p>
         <p><b>Y recuerda reservarte el sábado 21 de octubre a las 19:00h,</b>ya que voy a estar dando una <b>Masterclass</b> en directo para llevar tu mentalidad al siguiente nivel 🚀</p>

@@ -24,7 +24,7 @@ app.post("/enviar-correo", async function (req, res) {
         <a href="https://chat.whatsapp.com/LsQjZpF1n5qIk6vu7ufnQZ" style="display: block; text-align: center; margin: 0 auto;">
   <button style="background-color: #25d366; color: white; padding: 15px 30px; border: none; border-radius: 5px; text-align: center; font-size: 18px;">Entra aquí al desafío</button>
 </a>
-<p><b>Del lunes 17 de octubre al sábado 21 de octubre</b>estaremos compartiendo 5 días repletos de valor</p>
+<p><b>Del lunes 17 de octubre al sábado 21 de octubre</b> estaremos compartiendo 5 días repletos de valor</p>
         <p><b>Y recuerda reservarte el sábado 21 de octubre a las 19:00h,</b>ya que voy a estar dando una <b>Masterclass</b> en directo para llevar tu mentalidad al siguiente nivel 🚀</p>
         <p>¡Nos vemos dentro!</p>
         <p>Con muchísimas ganas de empezar y darle caña💪🏼</p>

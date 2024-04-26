@@ -41,7 +41,7 @@
     }
 
     if (isElementInViewport(number2) && !number2.dataset.animated) {
-      animateNumber(number2, 100);
+      animateNumber(number2, 120);
       number2.dataset.animated = true; // Marcar como animado
     }
   }

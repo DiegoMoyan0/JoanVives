@@ -83,7 +83,7 @@ p {
 }
 
 #hero {
-    background: rgba(0, 0, 0, 0.4) url(/images/hero.jpeg) center center no-repeat;
+    background: rgba(0, 0, 0, 0.4) url(images/joan-mar.jpeg) center center no-repeat;
     background-size: cover;
     /* Esto hará que la imagen ocupe todo el ancho */
     color: #f2ede3;
@@ -111,10 +111,10 @@ p {
 
 .text-hero {
     padding: 10px;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     /* Ajusta el tamaño del texto hero */
     font-weight: 800 !important;
-    line-height: 1em;
+    line-height: 140%;
     /* Ajusta el espaciado entre líneas del texto */
 }
 
@@ -145,7 +145,7 @@ p {
 }
 
 #caja-espara {
-    background-image: url(/images/_MG_6188.jpg);
+    background-image: url(images/_MG_6188.jpg);
     border-radius: 10px;
     background-size: contain !important;
     /* Cambiamos a 'contain' para ajustar la imagen al tamaño del contenedor */
@@ -203,7 +203,7 @@ p {
     margin-bottom: 1rem;
 }
 #caja-ABOUT {
-    background-image: url(/images/_MG_6188.jpg);
+    background-image: url(images/_MG_6188.jpg);
     border-radius: 10px;
     background-size: contain !important;
     /* Cambiamos a 'contain' para ajustar la imagen al tamaño del contenedor */
@@ -486,7 +486,8 @@ p {
     }
 
     .text-hero {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
+        width:850px;
         /* Ajusta el tamaño del texto hero para escritorio */
     }
 

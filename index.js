@@ -16,7 +16,6 @@ app.post("/enviar-correo", async function (req, res) {
       subject: "Tu Acceso al Entrenamiento Grupal",
       html: `
       <div style="text-align: center;">
-        <p>Hola ¡Bienvenid@ al entrenamiento grupal!</p> 
         <p>🔥FELICIDADES🔥</p>
         <p>Recibes este correo porque ya casi formas parte del grupo.</p>
         <p><b>Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.</b></p>

@@ -16,7 +16,6 @@ app.post("/enviar-correo", async function (req, res) {
       subject: "Tu Acceso al Entrenamiento Grupal",
       html: `
       <div style="text-align: center;">
-        <p>Hola ¡Bienvenid@ al entrenamiento grupal!</p> 
         <p>🔥FELICIDADES🔥</p>
         <p>Recibes este correo porque ya casi formas parte del grupo.</p>
         <p><b>Estás a nada de entrar al grupo de Whatsapp dónde vivirás toda la experiencia.</b></p>
@@ -24,7 +23,7 @@ app.post("/enviar-correo", async function (req, res) {
         <a href="https://chat.whatsapp.com/LE4RHbE1sAaAdet1xkfe4d" style="display: block; text-align: center; margin: 0 auto;">
   <button style="background-color: #25d366; color: white; padding: 15px 30px; border: none; border-radius: 5px; text-align: center; font-size: 18px;">Entra aquí al desafío</button>
 </a>
-<p>El miércoles<b>8 de mayo a las 18:30h</b>voy a estar guiando un entrenamiento grupal para que te vuelvas a motivar con el ejercicio</p>
+<p>El miércoles <b>8 de mayo a las 18:30h</b> voy a estar guiando un entrenamiento grupal para que te vuelvas a motivar con el ejercicio</p>
         <p>¡Nos vemos dentro!</p>
         <p>Con muchísimas ganas de empezar y darle caña💪🏼</p>
         <p>Joan Vives</p>
